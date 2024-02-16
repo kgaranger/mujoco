@@ -23,6 +23,8 @@ set(MUJOCO_ELASTICITY_SRCS
     elasticity.h
     membrane.cc
     membrane.h
+    pwl_bar.cc
+    pwl_bar.h
     register.cc
     shell.cc
     shell.h

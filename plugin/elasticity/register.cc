@@ -12,19 +12,21 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include <mujoco/mjplugin.h>
 #include "cable.h"
-#include "shell.h"
 #include "membrane.h"
+#include "pwl_bar.h"
+#include "shell.h"
 #include "solid.h"
+#include <mujoco/mjplugin.h>
 
 namespace mujoco::plugin::elasticity {
 
 mjPLUGIN_LIB_INIT {
   Cable::RegisterPlugin();
   Membrane::RegisterPlugin();
+  PWLBar::RegisterPlugin();
   Shell::RegisterPlugin();
   Solid::RegisterPlugin();
 }
 
-}  // namespace mujoco::plugin::elasticity
+} // namespace mujoco::plugin::elasticity
