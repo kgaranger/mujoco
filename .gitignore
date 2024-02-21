@@ -29,3 +29,6 @@ Info.framework.plist
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Python source distribution
+python/dist
